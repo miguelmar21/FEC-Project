@@ -18,7 +18,5 @@
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
   },
-  "plugins": [
-    "react"
-  ]
+  "plugins": ["react"]
 }

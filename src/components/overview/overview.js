@@ -1,13 +1,13 @@
-import React from 'react'
-import Images from './images.js'
-import ProductInfo from './productInfo.js'
-import StyleSelector from './styleSelector.js'
-import Cart from './cart.js'
-import Grid from '@mui/material/Grid'
-import Container from '@mui/material/Container'
+import React from "react";
+import Images from "./images.js";
+import ProductInfo from "./productInfo.js";
+import StyleSelector from "./styleSelector.js";
+import Cart from "./cart.js";
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 export default function Overview(props) {
-  return(
+  return (
     <div onClick={props.onClick}>
       <Container>
         <Grid container spacing={2}>
@@ -28,5 +28,5 @@ export default function Overview(props) {
         </Grid>
       </Container>
     </div>
-  )
+  );
 }

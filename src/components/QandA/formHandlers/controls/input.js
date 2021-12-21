@@ -1,18 +1,18 @@
-import React from 'react';
-import TextField from '@mui/material/TextField';
+import React from "react";
+import TextField from "@mui/material/TextField";
 
-const Input = props => {
+const Input = (props) => {
   const {
-          label,
-          variant,
-          name,
-          value,
-          onChange,
-          color,
-          error = null,
-          helperText,
-          ...others
-        } = props;
+    label,
+    variant,
+    name,
+    value,
+    onChange,
+    color,
+    error = null,
+    helperText,
+    ...others
+  } = props;
 
   return (
     <TextField
@@ -26,7 +26,7 @@ const Input = props => {
       error={error ? true : false}
       {...others}
     />
-  )
-}
+  );
+};
 
 export default Input;

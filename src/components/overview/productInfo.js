@@ -19,7 +19,10 @@ export default function ProductInfo() {
           precision={0.25}
           sx={{ color: "purple" }}
           readOnly
-        /><a href="#reviews" className="see-reviews">See reviews</a>
+        />
+        <a href="#reviews" className="see-reviews">
+          See reviews
+        </a>
       </div>
       <div className="product-name">
         <p>{product.category}</p>
@@ -29,9 +32,11 @@ export default function ProductInfo() {
           <p className="description">{product.description}</p>
         </div>
         <div>
-          <p className="features">{product.features
-            ? `${product.features[0].feature} - ${product.features[0].value} | ${product.features[1].feature} - ${product.features[1].value}`
-            : `haha`}</p>
+          <p className="features">
+            {product.features
+              ? `${product.features[0].feature} - ${product.features[0].value} | ${product.features[1].feature} - ${product.features[1].value}`
+              : `No features`}
+          </p>
         </div>
         <div className="prices">
           {styleValue.currentStyle && styleValue.currentStyle.sale_price ? (

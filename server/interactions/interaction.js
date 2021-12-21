@@ -10,18 +10,18 @@ routes.post("/", (req, res) => {
     data: {
       element: req.body.element,
       widget: req.body.widget,
-      time: req.body.time
+      time: req.body.time,
     },
     headers: {
-      Authorization: `${token}`
-    }
+      Authorization: `${token}`,
+    },
   })
     .then((reponse) => {
-      res.status(201).send('CREATED');
+      res.status(201).send("CREATED");
     })
     .catch((err) => {
       res.status(500).send("Error: ", err);
-    })
-})
+    });
+});
 
 module.exports = routes;

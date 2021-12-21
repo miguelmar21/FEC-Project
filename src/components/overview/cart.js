@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useProduct } from "../../contexts/ProductContext.js";
 import axios from "axios";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
 
 export default function Cart() {
   const { styleReducer } = useProduct();
@@ -53,17 +49,19 @@ export default function Cart() {
   function addToCart(e) {
     e.preventDefault();
     if (!sku || !quantity) {
-      alert('Please select size!')
-    } else {    axios
-      .post("http://localhost:3000/cart", {
-        sku_id: sku,
-      })
-      .then((response) => {
-        console.log("Added to cart!");
-      })
-      .catch((err) => {
-        console.error(err);
-      });}
+      alert("Please select size!");
+    } else {
+      axios
+        .post("http://localhost:3000/cart", {
+          sku_id: sku,
+        })
+        .then((response) => {
+          console.log("Added to cart!");
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    }
   }
 
   return (
@@ -94,7 +92,9 @@ export default function Cart() {
                 );
               })}
           </select>
-          <button type="submit" className="add-to-cart-button">Add to Cart!</button>
+          <button type="submit" className="add-to-cart-button">
+            Add to Cart!
+          </button>
         </form>
       </div>
     </div>

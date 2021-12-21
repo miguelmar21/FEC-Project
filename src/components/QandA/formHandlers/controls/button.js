@@ -1,16 +1,16 @@
-import React from 'react';
-import {Button as MuiButton} from '@mui/material';
+import React from "react";
+import { Button as MuiButton } from "@mui/material";
 
-const Button = props => {
+const Button = (props) => {
   const {
-          text,
-          color,
-          variant,
-          size,
-          onClick = null,
-          underline=null,
-          ...others
-        } = props;
+    text,
+    color,
+    variant,
+    size,
+    onClick = null,
+    underline = null,
+    ...others
+  } = props;
 
   return (
     <MuiButton
@@ -22,8 +22,7 @@ const Button = props => {
     >
       {underline ? <u>{text}</u> : text}
     </MuiButton>
-  )
-
+  );
 };
 
 export default Button;

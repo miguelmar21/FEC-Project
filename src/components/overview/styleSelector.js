@@ -13,15 +13,23 @@ export default function StyleSelector() {
 
   return (
     <div className="style-component">
-      <span>{styleValue.currentStyle ? `Styles - ${styleValue.currentStyle.name}` : `Styles`}</span>
+      <span>
+        {styleValue.currentStyle
+          ? `Styles - ${styleValue.currentStyle.name}`
+          : `Styles`}
+      </span>
       <div className="style-container">
-        {styles.map(style => {
+        {styles.map((style) => {
           return (
             <img
               key={style.style_id}
               id={style.style_id}
               onClick={setStyleOnClick}
-              className={styleValue.styleId === style.style_id ? 'style-thumbnails selected-style' : 'style-thumbnails'}
+              className={
+                styleValue.styleId === style.style_id
+                  ? "style-thumbnails selected-style"
+                  : "style-thumbnails"
+              }
               src={style.photos[0].thumbnail_url}
             ></img>
           );

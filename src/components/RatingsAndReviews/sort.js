@@ -1,10 +1,10 @@
-import React from 'react';
-import Grid from '@mui/material/Grid'
+import React from "react";
+import Grid from "@mui/material/Grid";
 
 export default function Sort(props) {
   const handleChange = (event) => {
     props.setSort(event.target.value);
-  }
+  };
   return (
     <div className="sort">
       <Grid container>
@@ -20,5 +20,5 @@ export default function Sort(props) {
         </Grid>
       </Grid>
     </div>
-  )
+  );
 }
