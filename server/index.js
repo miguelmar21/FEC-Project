@@ -22,7 +22,7 @@ app.use("/products", products);
 app.use("/cart", cart);
 app.use("/interactions", interactions);
 
-var port = 3000;
+var port = 80;
 
 app.listen(port, () => {
   console.log(`server is running and listening on http://localhost:${port}`);
