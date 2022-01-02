@@ -3,7 +3,10 @@ var app = express();
 var axios = require("axios");
 var cors = require("cors");
 var path = require("path");
+require("dotenv").config({path: '../.env'});
+const token = process.env.TOKEN
 
+console.log(token);
 app.use(express.static(__dirname + "/../dist"));
 app.use(express.json());
 app.use(cors());
@@ -22,7 +25,7 @@ app.use("/products", products);
 app.use("/cart", cart);
 app.use("/interactions", interactions);
 
-var port = 80;
+var port = 2000;
 
 app.listen(port, () => {
   console.log(`server is running and listening on http://localhost:${port}`);

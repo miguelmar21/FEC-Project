@@ -1,10 +1,11 @@
 var routes = require("express").Router();
 var axios = require("axios");
 var url = require("url");
-var config = require("../../config");
 var endPoint =
   "https://app-hrsei-api.herokuapp.com/api/fec2/hr-atx/qa/questions";
 
+require("dotenv").config('../../.env');
+const config = process.env.TOKEN
 var auth = { headers: { Authorization: `${config}` } };
 // product_id = 38323, question_id = 542812
 

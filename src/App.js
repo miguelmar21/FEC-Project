@@ -54,6 +54,7 @@ function App() {
 
   return (
     <React.Fragment>
+      Hi
       <div class="title-header">
         <h2>Urban Octo Chainsaw Clothing</h2>
       </div>

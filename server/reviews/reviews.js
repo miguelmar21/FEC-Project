@@ -1,7 +1,8 @@
 const routes = require("express").Router();
 const axios = require("axios");
-const token = require("../../config.js");
 const url = "https://app-hrsei-api.herokuapp.com/api/fec2/hr-atx/reviews";
+require("dotenv").config('../../.env');
+const token = process.env.TOKEN
 
 //route for product reviews
 routes.get("/", (req, res) => {
