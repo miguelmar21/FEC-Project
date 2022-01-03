@@ -7,7 +7,7 @@ This project was a foray into real development where our team was challenged wit
 
 ### REPO INSTRUCTIONS
 
-1: On a new directory, open up terminal and run: ``` git clone https://github.com/Team-Spaghetti/FEC-Project.git ```<br />
+1: On a new directory, open up terminal and run: ``` git clone https://github.com/miguelmar21/FEC-Project.git ```<br />
 2: ``` npm install ``` <br />
 3: Copy and paste config.example.js on the root directory and change its name to "config.js" <br />
 4: Create a GitHub personal access token to access API <br />
