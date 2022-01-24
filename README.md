@@ -1,4 +1,4 @@
-# Urban Octo Chainsaw Clothing (Catwalk)
+# Urban Octo Chainsaw Clothing (Catwalk/FEC)
 A fully functional front end application that is integrated with an already existing API. <br />
 
 This project was a foray into real development where our team was challenged with new technical and project management challenges. The function and design of this application was constructed in a manner to meet the specifications and requirements outlined by mock project stakeholders.
