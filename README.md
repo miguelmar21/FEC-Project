@@ -34,8 +34,11 @@
 
 
 <!-- ABOUT THE PROJECT -->
+# Urban Octo Chainsaw Clothing (Catwalk/FEC)
 ## About The Project
 A fullstack ecommerce web application featuring a filterable reviews catalog, question and reporting persistence, full-screen product display support and real-time validation and sanitation of user feedback.
+
+This project was a foray into real development where our team was challenged with new technical and project management challenges. The function and design of this application was constructed in a manner to meet the specifications and requirements outlined by mock project stakeholders.
 
 ![princeGif](https://user-images.githubusercontent.com/76494184/152275488-e1fd7711-1fc5-412b-b96d-5a3b9368eca0.gif)
 
